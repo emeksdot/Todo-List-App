@@ -29,3 +29,21 @@ todos.splice(0, 1);
 // It should have a function to change todos
 // It should have a function to delete todos
 
+function displayTodos(){
+    console.log('My todos: ', todos);
+}
+
+function addTodo(todo) {
+    todos.push(todo);
+    displayTodos();
+}
+
+function changeTodo(position, newValue){
+    todos[position] = newValue;
+    displayTodos();
+}
+
+function deleteTodo(position){
+    todos.splice(position, 1);
+    displayTodos();
+}
