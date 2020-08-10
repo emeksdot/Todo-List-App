@@ -47,3 +47,14 @@ function deleteTodo(position){
     todos.splice(position, 1);
     displayTodos();
 }
+
+//  Version 3 Objects
+// It should store the Todo array on an Object
+// It should have a display todos method
+// It should have an add todo method
+// It should have a change todo method
+// It should have a delete todo method
+
+var todoList = {
+    todos : ['item 1', 'item 2', 'item 3']
+}
